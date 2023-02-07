@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style2.css">
+    <title>CSS</title>
+</head>
+<body>
+    <div class="parallax">
+        <h1 class="page-title">
+        CSS
+        </h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/index.html">HTML</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="section">
+            <h2>What is CSS?</h2>
+            <p>CSS stands for cascading style sheets and is the language that we use to style a Web page. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS is able to control the layout of multiple web pages all at once by them all being linked to the same external stylsheet.</p>
+        </div>
+        <div class="section">
+            <h2>CSS Syntax</h2>
+            <img src="../image/css-syntax.gif" alt="css syntax">
+            <p>The selector points to the HTML element you want to style.</p>
+            <p>The declaration block contains one or more declarations separated by semicolons.</p>
+            <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+            <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+            <h3>Example CSS declaration block:</h3>
+            <p>.section {<br>
+            color: blue;<br>
+            background-color: #f075d7;<br>
+            align-text: center;<br>
+            font-weight: 700;<br>
+            }</p>
+        </div>
+        <div class="section">
+            <h2>Basic CSS Properties</h2>
+            <p>There is a vast list of CSS properties that can be used for various styling various HTML elements. Some of those may include:</p>
+            <ul>
+                <li>color:</li>
+                <li>background-color:</li>
+                <li>background-image:</li>
+                <li>border:</li>
+                <li>font-family:</li>
+                <li>font-size:</li>
+                <li>font-weight:</li>
+                <li>margin:</li>
+                <li>padding:</li>
+                <li>text-align:</li>
+            </ul>
+            <p>For a full list of CSS properties, visit this site <a href="https://www.tutorialrepublic.com/css-reference/css3-properties.php" target="_blank">here</a>.</p>
+        </div>
+        <div class="section">
+            <h2>CSS Pseudo-classes</h2>
+            <p>A pseudo-class is used to define a special state of an element.</p>
+            <p>For example, it can be used to:</p>
+            <ul>
+                <li>Style an element when a user mouses over it</li>
+                <li>Style visited and unvisited links differently</li>
+                <li>Style an element when it gets focus</li>
+            </ul>
+            <h3>The syntax of a psuedo-class:</h3>
+            <p>selector:pseudo-class {<br>
+            property: value;<br>
+            }</p>
+            <h3>Anchor pseduo-classes</h3>
+            <p>Links can be displayed in diferent ways:</p>
+            <p>/*unvisited link */<br>
+            a:link {<br>
+            <span class="indent">color: #ff0000;</span><br>
+            }<br>
+            /*visited link*/<br>
+            a:visited {<br>
+            <span class="indent">color: #00ff00;</span><br>
+            }<br>
+            /*mouse over link*/<br>
+            a:hover {<br>
+            <span class="indent">color: #ff00ff;</span><br>
+            }<br>
+            /*selected link*/<br>
+            a:active {<br>
+            <span class="indent">color: #0000ff;</span><br>
+            }<br>
+            </p>
+            <h3>the :first-child pseudo-class</h3>
+            <p>The :first-child pseudo-class matches a specified element that is the first child of another element.</p>
+            <p>In the following example, the selector matches any < p > element that is the first child of any element:</p>
+            <p>p:first-child {<br>
+            <span class="indent">color: blue;</span><br>
+            }</p>
+            <p>In this example, the selector matches the first < i > element in all < p > elements:</p>
+            <p>p i:first-child {<br>
+            <span class="indent">color: blue;</span><br>
+            }</p>
+            <p>This example is where the selector matches all < i > elements in < p > elements that are the first child of another element:</p>
+            <p>p:first-child i {<br>
+            <span class="indent">color: blue;</span><br>
+            }</p>
+        </div>
+        <div class="section">
+            <h2>List of some CSS Pseudo Classes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector</th>
+                        <th>Example</th>
+                        <th>Example Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>:active</td>
+                        <td>a:active</td>
+                        <td>Selects the active link</td>
+                    </tr>
+                    <tr>
+                        <td>:checked</td>
+                        <td>input:checked</td>
+                        <td>Selects every checked < input > element</td>
+                    </tr>
+                    <tr>
+                        <td>:disbaled</td>
+                        <td>input:disabled</td>
+                        <td>Selects every disabled < input > element</td>
+                    </tr>
+                    <tr>
+                        <td>:link</td>
+                        <td>a:link</td>
+                        <td>Selects all unvisited links</td>
+                    </tr>
+                    <tr>
+                        <td>:required</td>
+                        <td>input:required</td>
+                        <td>Selects < input > elements with a "required" attribute specified</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>For a full list of pseudo classes visit this <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">W<sup>3</sup> Schools link.</a></p>
+        </div>
+    </div>
+</body>
+</html>

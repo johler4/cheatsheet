@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <link rel="stylesheet" href="../css/style2.css">
+  <title>HTML</title>
+</head>
+<body>
+  <div class="parallax">
+    <h1 class="page-title">
+      HTML
+    </h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../css/index.html">CSS</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <div class="section">
+      <h2>What is HTML?</h2>
+      <p>HTML stands for Hyper Text Markup Language. HTML describes the structure of a Web page and is the standard markup language for creating web pages. It consists of a series of elements that tell the browser how to display the content. HTML elements label pieces of content such as 'this is a heading', 'this is a paragraph', 'this is a link', etc.</p>
+    </div>
+    <div class="section">
+      <h2>HTML Boiler Plate</h2>
+      <ol>
+        <li> < !DOCTYPE html ></li>
+        <li> < html lang="en" ></li>
+        <li> < head ></li>
+        <li> < meta charset="utf-8" ></li>
+        <li> < meta name="viewport" content="width=device-width, initial-scale=1.0" ></li>
+        <li> < title > Page Title < /title ></li>
+        <li> < link rel="stylesheet" href="#" ></li>
+        <li> < /head ></li>
+        <li> < body ></li>
+        <li> < /body></li>
+        <li> < / html ></li>
+      </ol>
+      <h3>Boiler Plate Explained:</h3>
+      <ol>
+        <li>Line 1 is the document type declaration. All HTML documents must start with this. A doctype tells the broswer what version of HTML the page is written in. If this is forgotten in your code file, then some HTML5 tags (like < article > and < footer >) may not be read by the browser.</li>
+        <li>Line 2 is your root element. The < html > tag is the top level element of the HTML file. You will nest the < head > and < body > tags inside of it. The 'lang=""' attribute inside the opening < html > tag set the language for the page. It is also good to include it for accessibility reasons, beacause screen readers will know how to properly pronounce the text.</li>
+        <li>Line 3 begins our < head > section. Our < head > section contains information that is processed by machines. Inside the < head > tags you will nest metadata which is data that describes the document to the machine.</li>
+        <li>Meta tags define metadata about an HTML document. Meta data is used by browsers (how to display content or reload page), search engines (keywords), and other webs services. Our first < meta > tag is being used to define our character set. UTF-8 (can be written in either lower or upper-case) is the standard character encoding you should use in your web pages. UTF-8 stands for Unicode Transformation Format 8-bit and is the worlds most common character encoding.</li>
+        <li>Our next < meta > tag on line 5 defines the size of the viewport and renders the width of the page to the width of the device's screen. If you have a mobile device that is 600px wide, then the browser window will also be 600px wide. The "intial-scale=1.0" controls the zoom level. The value of the 1 for initial-scale prevents the default zoom by browsers.</li>
+        <li>Line 6 is our < title > tag. The text put in these tags is the title for our web page and is what is shown in the browser's title bar. This text is extremely important as it is critical for SEO (search engine optimization) and affects how Google's algorithms understand your content and rank your page.</li>
+        <li>< link > tags link other external sources to the current document. The < link > tag is most often used to link to external style sheets or to add a favicon or font-style to your website. On this line of our boilerplate we are linking to an external stylesheet. The "type="stylesheet" attribute tells the link tag that the "href=''" attribute is a CSS stylesheet. Inside of the href attribute you will need to list the location of your external stylesheet.</li>
+        <li>Line 8 is our closing tag for the < /head > section.</li>
+        <li>Line 9 is our opening tag for our < body >. The < body > defines the body of our document. This section will contain all the contents of our HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, nav's, footers, etc. There can only be one < body > element.</li>
+        <li>Line 10 is our closing < /body > tag.</li>
+        <li>Line 11 is our closnig < /html > tag</li>
+      </ol>
+    </div>
+    <div class="section">
+      <h2>HTML Elements</h2>
+      <p>An HTML element is a component of an HTML document that tells a web browser how to structure and interpret a part of the HTML document. An element is defined by a start tag, some content, and an end tag:</p>
+      <p>< tagname > Content goes here < /tagname ></p>
+      <p>Some examples of elements are:</p>
+      <table class="elements">
+        <thead>
+            <tr>
+            <th>Element</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>< a > < /a ></td>
+            <td>Anchor (creates a link)</td>
+          </tr>
+          <tr>
+            <td>< br ></td>
+            <td>Defines a single line break (does not require a closing tag)</td>
+          </tr>
+          <tr>
+            <td>< button > < /button ></td>
+            <td>Defines a clickable button</td>
+          </tr>
+          <tr>
+            <td>< div > < /div ></td>
+            <td>Defines a section in a document</td>
+          </tr>
+          <tr>
+            <td>< footer > < /footer ></td>
+            <td>Defines a footer for a document or section</td>
+          </tr>
+          <tr>
+            <td>< h1 > < /h1 ></td>
+            <td>Heading (h1-h6)</td>
+          </tr>
+          <tr>
+            <td>< header > < /header ></td>
+            <td>Defines a header for a document or section</td>
+          </tr>
+          <tr>
+            <td>< p > < /p ></td>
+            <td>Paragraph</td>
+          </tr>
+          <tr>
+            <td>< img ></td>
+            <td>Image tag (does not require a closing tag)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>For a full list of HTML elements visit this <a href="https://www.w3schools.com/TAGS/default.asp" target="_blank">W<sup>3</sup> Schools Link</a></p>
+    </div>
+    <div class="section">
+      <h2>HTML Attributes</h2>
+      <p>An HTML attribute is a piece of markup language used to adjust the behavior or display of an HTML element. For example, attributes can be used to change the color, size, or functionality of HTML elements. All HTML elements can have attributes, but not all attributes can be used for every element. When asigning an attribute to an element, the attribute is always specified within the start tag and usually come in a name/value pair like name="value".</p>
+      <h3>href Attribute</h3>
+      <p>Often used with the < a > tag. The href attribute specifies the URL of the page the link goes to:</p>
+      <p>< a href ="https://www.google.com" >This would link to Google< /a ></p>
+      <h3>src Attribute</h3>
+      <p>Often used with the < img > tag. When used in an img element the src attribute embeds an image in an HTML page. The src attribute specifies the path to the image to be displayed. The path can either be internal or external (local or from the Web):</p>
+      <p>< img src="imagesfolder/image.jpeg" ></p>
+      <p>The above image that would show would be the file titled 'image.jpeg' located in the directory titled 'imagesfolder' on your local machine. Make sure when linking locally that you are creating a direct path from the index.html file that you are embedding the image to! Images from the web will need the full URL for the image to be displayed.</p>
+      <h3>width and height Attributes</h3>
+      <p>These two attributes can be used to define the size of various elements including divs, headers, footers, navs, images, videos, etc.:</p>
+      <p>width: 100px;<br>
+      height: 100px;</p>
+      <h3>alt Attribute</h3>
+      <p>The alt attribute specifies an alternative text for an image if the image for some reason cannot be displayed. This is required on all "img" elements so that if the image is not loaded, the alternate text will be displayed. This is also used for those people who use screen readers so that the image alt text is then read to them to describe the image. Alt text should be breif but descriptive:</p>
+      <p>< img href="butterfly.jpeg" alt="a beautiful butterfly" ></p>
+      <h3>style Attribute</h3>
+      <p>The style attribute is used to add CSS styling to a page or individually to each element. Inline styling is not good practice as is can very quickly clutter up an HTML document. Styling within the head element, even though cleaner than inline-styling, is also not good practice. Styling should always be done on a seperate style.css file and should be linked through the head element using a link tag.</p>
+    </div>
+    <div class="section">
+      <h2>Lists and Tables</h2>
+        <h3>Unordered List</h3>
+        <p>Unordered lists will show lists of items with a default list style of bullet points. The list style can be changed or removed by using the list-style=" " attribute. The opening and closing tags are "ul" and each line item listed between the two tags would be contained within opening and closing "li" tags. Example code:</p>
+        <p>< ul ><br>
+        <span class="indent">< li > < /li ></span><br>
+        <span class="indent">< li > < /li ></span><br>
+        <span class="indent">< li > < /li ></span><br>
+        < /ul ></p>
+        <h3>Ordered Lists</h3>
+        <p>Ordered lists are similiar to unordered lists, but rather than using bullet points, ordered lists use numbers for their list items. Ordered lists begin and end with "ol" tags and use the same "li" tags for the list items. Example code:</p>
+        <p>< ol ><br>
+        <span class="indent">< li > < /li ></span><br>
+        <span class="indent">< li > < /li ></span><br>
+        <span class="indent">< li > < /li ></span><br>
+        < /ol ></p>
+        <h3>Tables</h3>
+        <p>Tables can be used to put various pieces of information into a table format. A table is defined using beginning and ending "table" tags. Within those tags you will have nested "thead" and "tbody" tags to separate or table head and table body. Within your table head and table body you will have "tr" tags that define your table rows. And then nested in your table rows you will have "tr" tags for your table head, and "td" tags for your table body. These "th" and "td" tags are what actually contain the information that you want to put in each cell of the table. Example code:</p>
+        <p>< table ><br>
+        <span class="indent">< thead ></span><br>
+        <span class="indent2">< tr ></span><br>
+        <span class="indent3">< th > Table head content row 1 col 1 < /th ></span><br>
+        <span class="indent3">< th > Table head content row 1 col 2 < /th ></span><br>
+        <span class="indent2">< /tr ></span><br>
+        <span class="indent">< /thead ></span><br>
+        <span class="indent">< tbody ></span><br>
+        <span class="indent2">< tr ></span><br>
+        <span class="indent3">< td >table body content row 1 col 1 < /td ></span><br>
+        <span class="indent3">< td >table body content row 1 col 2 < /td ></span><br>
+        <span class="indent2">< /tr ></span><br>
+        <span class="indent2">< tr ></span><br>
+        <span class="indent3">< td >table body content row 2 col 1 < /td ></span><br>
+        <span class="indent3">< td >table body content row 2 col 2 < /td ></span><br>
+        <span class="indent2">< /tr ></span><br>
+        <span class="indent">< /tbody ></span><br>
+        < /table >
+        </p>
+        <p>The above code would should a table with three rows (one head and two body) and two columns. It would look something like this:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>head1</th>
+              <th>head2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>body col1 row1</td>
+              <td>body col2 row1</td>
+            </tr>
+            <tr>
+              <td>body col1 row2</td>
+              <td>body col2 row2</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</body>
+</html>

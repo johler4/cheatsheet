@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/coding.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex-grow: 1.4;
+}
+
+.right {
+    flex-grow: 1;
+    background-color: rgb(230, 230, 230);
+    opacity: .8;
+}
+
+.heading {
+    font-size: 100px;
+    margin-top: 100px;
+    color: black;
+    border-right: none;
+    background-color: rgb(230, 230, 230);
+    opacity: .8;
+    text-align: center;
+    font-weight: 100;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.right-header {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.right-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    opacity: .5;
+}
