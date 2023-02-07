@@ -71,6 +71,11 @@ nav a:hover {
     border-bottom: 1px solid black;
 }
 
+h2,
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .definition span {
     text-decoration: underline;
     font-weight: bold;
